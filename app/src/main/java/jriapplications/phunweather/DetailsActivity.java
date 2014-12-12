@@ -110,6 +110,8 @@ public class DetailsActivity extends Activity {
     }
 
     private void showForecast(){
+        mProgressBar.setVisibility(View.GONE);
+
         mToday.setText(mWeather.getDay());
         mDate.setText(mWeather.getDateString());
         Picasso.with(this).load(mWeather.getIconUrl(Forecast.When.TODAY)).into(mIcon);
@@ -159,8 +161,6 @@ public class DetailsActivity extends Activity {
         mWeatherUndergroundInteractor.getZipCodeForecast(zipCode, new Callback<ForecastWrapper>() {
             @Override
             public void success(ForecastWrapper forecastWrapper, Response response) {
-                mProgressBar.setVisibility(View.GONE);
-
                 if(forecastWrapper.responseOk()){
                     mWeather.setForecast(forecastWrapper.forecast);
                     mWeatherMap.put(mWeather.getZipCode(), mWeather);

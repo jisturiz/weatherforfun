@@ -6,3 +6,17 @@ Android Weather Application
 
 - The user should be able to navigate back to the list and select another zip to display the 'Details' page for it.
 
+
+Challenges:
+- Designing UI
+- Preferred method of storing weather data
+
+TODO:
+- Improve UI
+- Create a widget
+- Store Zip, City, St in DB and track 5 latest
+- Location Base Pre-Population
+- Configure OKHttp Cache
+- Temperature F & C options
+- Push Notifs tied into morning alarm (Ex. Don't Forget Umbrella)
+- Last Updated and Pull to Refresh Option

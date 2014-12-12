@@ -41,6 +41,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         ButterKnife.inject(this);
 
         mWeatherMap = ((PhunWeather) getApplication()).getApplicationWeatherMap();
@@ -48,9 +49,11 @@ public class MainActivity extends Activity {
         loadLatestZipCodes();
 
         mWeatherUndergroundInteractor = new WeatherUndergroundInteractor(this);
+
         mWeatherListAdapter = new WeatherListAdapter(this, mWeatherMap.values());
 
         mListView.setAdapter(mWeatherListAdapter);
+
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

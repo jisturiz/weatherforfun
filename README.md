@@ -1,3 +1,4 @@
+[![Codix](http://codix.io/badge/jisturiz/weatherforfun)](http://codix.io/repo/jisturiz/weatherforfun)
 Android Weather Application
 
 - Create a list based application where the list should be pre-populated with at least 3 entries, where each entry represents a different US zip code.

@@ -1,4 +1,4 @@
-[![Codix](http://codix.io/badge/jisturiz/weatherforfun)](http://codix.io/repo/jisturiz/weatherforfun)
+[![Codix](http://codix.io/badge/jisturiz/weatherforfun)](http://codix.io/repo/jisturiz/weatherforfun)]
 
 Android Weather Application
 
